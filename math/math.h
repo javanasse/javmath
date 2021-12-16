@@ -34,7 +34,7 @@
 #define M_PI 3.14159265358979323846
 #endif
 
-namespace eers {
+namespace jav {
     namespace math {
         template <typename T> boost::numeric::ublas::vector<T> add(boost::numeric::ublas::vector<T> x, T a);
 

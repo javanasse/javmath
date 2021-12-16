@@ -11,7 +11,7 @@
 #include "math.h"
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::add(boost::numeric::ublas::vector<T> x, T a)
+boost::numeric::ublas::vector<T> jav::math::add(boost::numeric::ublas::vector<T> x, T a)
 {
     boost::numeric::ublas::vector<T> y (x.size());
     for (int n = 0; n < x.size(); n++)
@@ -22,7 +22,7 @@ boost::numeric::ublas::vector<T> eers::math::add(boost::numeric::ublas::vector<T
 }
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::max(boost::numeric::ublas::vector<T> x, T a)
+boost::numeric::ublas::vector<T> jav::math::max(boost::numeric::ublas::vector<T> x, T a)
 {
     boost::numeric::ublas::vector<T> y (x.size());
     for (int n = 0; n < x.size(); n++)
@@ -36,7 +36,7 @@ boost::numeric::ublas::vector<T> eers::math::max(boost::numeric::ublas::vector<T
 }
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::max(boost::numeric::ublas::vector<T> x, boost::numeric::ublas::vector<T> y)
+boost::numeric::ublas::vector<T> jav::math::max(boost::numeric::ublas::vector<T> x, boost::numeric::ublas::vector<T> y)
 {
     boost::numeric::ublas::vector<T> w (x.size());
     for (int n = 0; n < x.size(); n++)
@@ -50,7 +50,7 @@ boost::numeric::ublas::vector<T> eers::math::max(boost::numeric::ublas::vector<T
 }
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::min(boost::numeric::ublas::vector<T> x, T a)
+boost::numeric::ublas::vector<T> jav::math::min(boost::numeric::ublas::vector<T> x, T a)
 {
     boost::numeric::ublas::vector<T> y (x.size());
     for (int n = 0; n < x.size(); n++)
@@ -64,7 +64,7 @@ boost::numeric::ublas::vector<T> eers::math::min(boost::numeric::ublas::vector<T
 }
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::min(boost::numeric::ublas::vector<T> x, boost::numeric::ublas::vector<T> y)
+boost::numeric::ublas::vector<T> jav::math::min(boost::numeric::ublas::vector<T> x, boost::numeric::ublas::vector<T> y)
 {
     boost::numeric::ublas::vector<T> w (x.size());
     for (int n = 0; n < x.size(); n++)
@@ -78,7 +78,7 @@ boost::numeric::ublas::vector<T> eers::math::min(boost::numeric::ublas::vector<T
 }
 
 template <typename T>
-T eers::math::mean(boost::numeric::ublas::vector<T> x)
+T jav::math::mean(boost::numeric::ublas::vector<T> x)
 {
     T mu = T();
     for (int n = 0; n < x.size(); n++)
@@ -90,7 +90,7 @@ T eers::math::mean(boost::numeric::ublas::vector<T> x)
 }
 
 template <typename T>
-T eers::math::sum(boost::numeric::ublas::vector<T> x)
+T jav::math::sum(boost::numeric::ublas::vector<T> x)
 {
     T s = T();
     for (int n = 0; n < x.size(); n++)
@@ -101,7 +101,7 @@ T eers::math::sum(boost::numeric::ublas::vector<T> x)
 }
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::real(boost::numeric::ublas::vector<std::complex<T> > z)
+boost::numeric::ublas::vector<T> jav::math::real(boost::numeric::ublas::vector<std::complex<T> > z)
 {
     boost::numeric::ublas::vector<T> r (z.size());
     for (int n = 0; n < z.size(); n++)
@@ -112,7 +112,7 @@ boost::numeric::ublas::vector<T> eers::math::real(boost::numeric::ublas::vector<
 }
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::imag(boost::numeric::ublas::vector<std::complex<T> > z)
+boost::numeric::ublas::vector<T> jav::math::imag(boost::numeric::ublas::vector<std::complex<T> > z)
 {
     boost::numeric::ublas::vector<T> i (z.size());
     for (int n = 0; n < z.size(); n++)
@@ -123,7 +123,7 @@ boost::numeric::ublas::vector<T> eers::math::imag(boost::numeric::ublas::vector<
 }
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::abs(boost::numeric::ublas::vector<std::complex<T> > z)
+boost::numeric::ublas::vector<T> jav::math::abs(boost::numeric::ublas::vector<std::complex<T> > z)
 {
     boost::numeric::ublas::vector<T> v (z.size());
     for (int n = 0; n < z.size(); n++)
@@ -134,7 +134,7 @@ boost::numeric::ublas::vector<T> eers::math::abs(boost::numeric::ublas::vector<s
 }
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::abs(boost::numeric::ublas::vector<T> x)
+boost::numeric::ublas::vector<T> jav::math::abs(boost::numeric::ublas::vector<T> x)
 {
     boost::numeric::ublas::vector<T> y (x.size());
     for (int n = 0; n < x.size(); n++)
@@ -145,7 +145,7 @@ boost::numeric::ublas::vector<T> eers::math::abs(boost::numeric::ublas::vector<T
 }
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::angle(boost::numeric::ublas::vector<std::complex<T> > z)
+boost::numeric::ublas::vector<T> jav::math::angle(boost::numeric::ublas::vector<std::complex<T> > z)
 {
     boost::numeric::ublas::vector<T> v (z.size());
     for (int n = 0; n < z.size(); n++)
@@ -156,7 +156,7 @@ boost::numeric::ublas::vector<T> eers::math::angle(boost::numeric::ublas::vector
 }
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::pow(boost::numeric::ublas::vector<T> x, T p)
+boost::numeric::ublas::vector<T> jav::math::pow(boost::numeric::ublas::vector<T> x, T p)
 {
     boost::numeric::ublas::vector<T> y (x.size());
     for (int n = 0; n < x.size(); n++)
@@ -167,7 +167,7 @@ boost::numeric::ublas::vector<T> eers::math::pow(boost::numeric::ublas::vector<T
 }
 
 template<typename T>
-boost::numeric::ublas::vector<T> eers::math::pow(T b, boost::numeric::ublas::vector<T> p)
+boost::numeric::ublas::vector<T> jav::math::pow(T b, boost::numeric::ublas::vector<T> p)
 {
     boost::numeric::ublas::vector<T> y(p.size(), T());
     for (int n = 0; n < p.size(); n++)
@@ -179,7 +179,7 @@ boost::numeric::ublas::vector<T> eers::math::pow(T b, boost::numeric::ublas::vec
 }
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::log10(boost::numeric::ublas::vector<T> x)
+boost::numeric::ublas::vector<T> jav::math::log10(boost::numeric::ublas::vector<T> x)
 {
     boost::numeric::ublas::vector<T> y (x.size());
     for (int n = 0; n < x.size(); n++)
@@ -190,7 +190,7 @@ boost::numeric::ublas::vector<T> eers::math::log10(boost::numeric::ublas::vector
 }
 
 template<typename T>
-boost::numeric::ublas::vector<T> eers::math::logb(boost::numeric::ublas::vector<T> x, T b)
+boost::numeric::ublas::vector<T> jav::math::logb(boost::numeric::ublas::vector<T> x, T b)
 {
     boost::numeric::ublas::vector<T> y(x.size());
     for (int n = 0; n < x.size(); n++)
@@ -201,23 +201,23 @@ boost::numeric::ublas::vector<T> eers::math::logb(boost::numeric::ublas::vector<
 }
 
 template<typename T>
-T eers::math::dB2lin(T x)
+T jav::math::dB2lin(T x)
 {
     return std::pow(T(10.0), x / T(20.0));
 }
 
 template<typename T>
-boost::numeric::ublas::vector<T> eers::math::dB2lin(boost::numeric::ublas::vector<T> x)
+boost::numeric::ublas::vector<T> jav::math::dB2lin(boost::numeric::ublas::vector<T> x)
 {
     boost::numeric::ublas::vector<T> y (x.size(), T(0.0));
     for (int n = 0; n < y.size(); n++)
     {
-        y(n) = eers::math::dB2lin(x(n));
+        y(n) = jav::math::dB2lin(x(n));
     }
     return y;
 }
 
-template <typename T> boost::numeric::ublas::vector<T> eers::math::sin(boost::numeric::ublas::vector<T> t)
+template <typename T> boost::numeric::ublas::vector<T> jav::math::sin(boost::numeric::ublas::vector<T> t)
 {
     boost::numeric::ublas::vector<T> y (t.size());
     for (int n = 0; n < t.size(); n++)
@@ -227,7 +227,7 @@ template <typename T> boost::numeric::ublas::vector<T> eers::math::sin(boost::nu
     return y;
 }
 
-template <typename T> boost::numeric::ublas::vector<T> eers::math::cos(boost::numeric::ublas::vector<T> t)
+template <typename T> boost::numeric::ublas::vector<T> jav::math::cos(boost::numeric::ublas::vector<T> t)
 {
     boost::numeric::ublas::vector<T> y (t.size());
     for (int n = 0; n < t.size(); n++)
@@ -237,7 +237,7 @@ template <typename T> boost::numeric::ublas::vector<T> eers::math::cos(boost::nu
     return y;
 }
 
-template <typename T> boost::numeric::ublas::vector<T> eers::math::wrap_to_pi(boost::numeric::ublas::vector<T> t)
+template <typename T> boost::numeric::ublas::vector<T> jav::math::wrap_to_pi(boost::numeric::ublas::vector<T> t)
 {
     boost::numeric::ublas::vector<T> y (t.size());
     for (int n = 0; n < t.size(); n++)
@@ -248,7 +248,7 @@ template <typename T> boost::numeric::ublas::vector<T> eers::math::wrap_to_pi(bo
 }
 
 template <typename T>
-boost::numeric::ublas::vector<T> eers::math::zp(boost::numeric::ublas::vector<T> x, int len)
+boost::numeric::ublas::vector<T> jav::math::zp(boost::numeric::ublas::vector<T> x, int len)
 {
     /* zero-pad */
     boost::numeric::ublas::vector<T> y (x.size() + len, 0.0);
@@ -259,7 +259,7 @@ boost::numeric::ublas::vector<T> eers::math::zp(boost::numeric::ublas::vector<T>
     return y;
 }
 
-template <typename T> boost::numeric::ublas::vector<std::complex<T> > eers::math::zp(boost::numeric::ublas::vector<std::complex<T> > z, int len)
+template <typename T> boost::numeric::ublas::vector<std::complex<T> > jav::math::zp(boost::numeric::ublas::vector<std::complex<T> > z, int len)
 {
     /* zero-pad */
     boost::numeric::ublas::vector<std::complex<T> > y (z.size() + len, 0.0);
@@ -271,7 +271,7 @@ template <typename T> boost::numeric::ublas::vector<std::complex<T> > eers::math
 }
 
 template <typename T>
-boost::numeric::ublas::vector<std::complex<T> > eers::math::complex(boost::numeric::ublas::vector<T> r)
+boost::numeric::ublas::vector<std::complex<T> > jav::math::complex(boost::numeric::ublas::vector<T> r)
 {
     /* takes real vector and outputs complex vector */
     boost::numeric::ublas::vector<std::complex<T> > z (r.size());
@@ -283,7 +283,7 @@ boost::numeric::ublas::vector<std::complex<T> > eers::math::complex(boost::numer
 }
 
 template <typename T>
-boost::numeric::ublas::vector<std::complex<T> > eers::math::complex(boost::numeric::ublas::vector<T> r, boost::numeric::ublas::vector<T> i)
+boost::numeric::ublas::vector<std::complex<T> > jav::math::complex(boost::numeric::ublas::vector<T> r, boost::numeric::ublas::vector<T> i)
 {
     /* takes real vector and outputs complex vector */
     boost::numeric::ublas::vector<std::complex<T> > z (r.size());
@@ -297,7 +297,7 @@ boost::numeric::ublas::vector<std::complex<T> > eers::math::complex(boost::numer
 }
 
 template <typename T>
-boost::numeric::ublas::vector<std::complex<T> > eers::math::pol2cart(boost::numeric::ublas::vector<T> r, boost::numeric::ublas::vector<T> p)
+boost::numeric::ublas::vector<std::complex<T> > jav::math::pol2cart(boost::numeric::ublas::vector<T> r, boost::numeric::ublas::vector<T> p)
 {
     /* convert magnitude and phase vectors to cartesian complex vector */
     
@@ -315,7 +315,7 @@ boost::numeric::ublas::vector<std::complex<T> > eers::math::pol2cart(boost::nume
 }
 
 template <typename T>
-boost::numeric::ublas::vector<std::complex<T> > eers::math::fft(boost::numeric::ublas::vector<T> r, kiss_fft_cfg dir)
+boost::numeric::ublas::vector<std::complex<T> > jav::math::fft(boost::numeric::ublas::vector<T> r, kiss_fft_cfg dir)
 {
     /* wrapper for kiss_fft */
     
@@ -357,7 +357,7 @@ boost::numeric::ublas::vector<std::complex<T> > eers::math::fft(boost::numeric::
 }
 
 template <typename T>
-boost::numeric::ublas::vector<std::complex<T> > eers::math::fft(boost::numeric::ublas::vector<std::complex<T> > z, kiss_fft_cfg dir)
+boost::numeric::ublas::vector<std::complex<T> > jav::math::fft(boost::numeric::ublas::vector<std::complex<T> > z, kiss_fft_cfg dir)
 {
     /* wrapper for kiss_fft */
     
@@ -401,7 +401,7 @@ boost::numeric::ublas::vector<std::complex<T> > eers::math::fft(boost::numeric::
 ///
 /// Expands roots of polynomial to the polynomial coefficients.
 ///
-template <typename T> boost::numeric::ublas::vector<T> eers::math::poly(boost::numeric::ublas::vector<T> roots)
+template <typename T> boost::numeric::ublas::vector<T> jav::math::poly(boost::numeric::ublas::vector<T> roots)
 {
     std::vector<T> result;
     result.push_back((T)1.0);
@@ -431,7 +431,7 @@ template <typename T> boost::numeric::ublas::vector<T> eers::math::poly(boost::n
 /// Polynomial coefficients is stored in descending order as follows:
 /// p(0) is the highest order coefficient, p(end) is the constant term.
 ///
-template <typename T> T eers::math::polyval(boost::numeric::ublas::vector<T> p, T x)
+template <typename T> T jav::math::polyval(boost::numeric::ublas::vector<T> p, T x)
 {
     T acc = T();
     //for (int n = p.size()-1; n >= 0; n--)
@@ -442,7 +442,7 @@ template <typename T> T eers::math::polyval(boost::numeric::ublas::vector<T> p, 
     return acc;
 }
 
-template <typename T> bool eers::math::has_nan(boost::numeric::ublas::vector<T> x)
+template <typename T> bool jav::math::has_nan(boost::numeric::ublas::vector<T> x)
 {
     /* Return true if x contains nan value(s) */
     
@@ -454,7 +454,7 @@ template <typename T> bool eers::math::has_nan(boost::numeric::ublas::vector<T> 
     return false;
 }
 
-template <typename T> bool eers::math::has_inf(boost::numeric::ublas::vector<T> x)
+template <typename T> bool jav::math::has_inf(boost::numeric::ublas::vector<T> x)
 {
     for (int n = 0; n < x.size(); n++)
     {
@@ -465,7 +465,7 @@ template <typename T> bool eers::math::has_inf(boost::numeric::ublas::vector<T> 
 }
 
 template<typename T>
-boost::numeric::ublas::vector<T> eers::math::linspace(T start, T end, int num)
+boost::numeric::ublas::vector<T> jav::math::linspace(T start, T end, int num)
 {
     boost::numeric::ublas::vector<T> result(num, T());
     if (num == 0)
@@ -494,7 +494,7 @@ boost::numeric::ublas::vector<T> eers::math::linspace(T start, T end, int num)
 
 
 /*
-    eers::math::logspace(T start, T end, int num)
+    jav::math::logspace(T start, T end, int num)
 
     returns a vector of logarithmically spaced points from START to END with
     a base of 10.
@@ -502,7 +502,7 @@ boost::numeric::ublas::vector<T> eers::math::linspace(T start, T end, int num)
     START and END must be real and greater than zero.
 */
 template<typename T>
-boost::numeric::ublas::vector<T> eers::math::logspace(T start, T end, int num)
+boost::numeric::ublas::vector<T> jav::math::logspace(T start, T end, int num)
 {
     if (start < 0 || end < 0)
     {
@@ -514,10 +514,10 @@ boost::numeric::ublas::vector<T> eers::math::logspace(T start, T end, int num)
     end = std::log10(end);
 
     // space points 
-    boost::numeric::ublas::vector<T> line = eers::math::linspace(start, end, num);
+    boost::numeric::ublas::vector<T> line = jav::math::linspace(start, end, num);
     
     // take power 10 and return
-    return eers::math::pow(T(10.0), line);
+    return jav::math::pow(T(10.0), line);
 }
 
 /*
@@ -528,86 +528,86 @@ boost::numeric::ublas::vector<T> eers::math::logspace(T start, T end, int num)
 
 */
 template<typename T>
-T eers::math::rescale(T value, T source_min, T source_max, T dest_min, T dest_max)
+T jav::math::rescale(T value, T source_min, T source_max, T dest_min, T dest_max)
 {
     return (((value - source_min) * (dest_max - dest_min)) / (source_max - source_min)) + dest_min;
 }
 
 
-template boost::numeric::ublas::vector<float>                   eers::math::add(boost::numeric::ublas::vector<float> x, float a);
-template boost::numeric::ublas::vector<std::complex<float> >    eers::math::add(boost::numeric::ublas::vector<std::complex<float> > x, std::complex<float>  a);
-template boost::numeric::ublas::vector<float>                   eers::math::max(boost::numeric::ublas::vector<float> x, float a);
-template boost::numeric::ublas::vector<float>                   eers::math::max(boost::numeric::ublas::vector<float> x, boost::numeric::ublas::vector<float> y);
-template boost::numeric::ublas::vector<float>                   eers::math::min(boost::numeric::ublas::vector<float> x, float a);
-template boost::numeric::ublas::vector<float>                   eers::math::min(boost::numeric::ublas::vector<float> x, boost::numeric::ublas::vector<float> y);
-template float                                                  eers::math::mean(boost::numeric::ublas::vector<float> x);
-template float                                                  eers::math::sum(boost::numeric::ublas::vector<float> x);
-template boost::numeric::ublas::vector<float>                   eers::math::real(boost::numeric::ublas::vector<std::complex<float> > z);
-template boost::numeric::ublas::vector<float>                   eers::math::imag(boost::numeric::ublas::vector<std::complex<float> > z);
-template boost::numeric::ublas::vector<float>                   eers::math::abs(boost::numeric::ublas::vector<std::complex<float> > z);
-template boost::numeric::ublas::vector<float>                   eers::math::abs(boost::numeric::ublas::vector<float> x);
-template boost::numeric::ublas::vector<float>                   eers::math::angle(boost::numeric::ublas::vector<std::complex<float> > z);
-template boost::numeric::ublas::vector<float>                   eers::math::pow(boost::numeric::ublas::vector<float> x, float p);
-template boost::numeric::ublas::vector<float>                   eers::math::pow(float b, boost::numeric::ublas::vector<float> p);
-template boost::numeric::ublas::vector<float>                   eers::math::log10(boost::numeric::ublas::vector<float> x);
-template boost::numeric::ublas::vector<float>                   eers::math::logb(boost::numeric::ublas::vector<float> x, float b);
-template float                                                  eers::math::dB2lin(float x);
-template boost::numeric::ublas::vector<float>                   eers::math::dB2lin(boost::numeric::ublas::vector<float> x);
-template boost::numeric::ublas::vector<float>                   eers::math::sin(boost::numeric::ublas::vector<float> t);
-template boost::numeric::ublas::vector<float>                   eers::math::cos(boost::numeric::ublas::vector<float> t);
-template boost::numeric::ublas::vector<float>                   eers::math::wrap_to_pi(boost::numeric::ublas::vector<float> t);
-template boost::numeric::ublas::vector<float>                   eers::math::zp(boost::numeric::ublas::vector<float> x, int len);
-template boost::numeric::ublas::vector<std::complex<float> >    eers::math::zp(boost::numeric::ublas::vector<std::complex<float> > z, int len);
-template boost::numeric::ublas::vector<std::complex<float> >    eers::math::complex(boost::numeric::ublas::vector<float> r);
-template boost::numeric::ublas::vector<std::complex<float> >    eers::math::complex(boost::numeric::ublas::vector<float> r, boost::numeric::ublas::vector<float> i);
-template boost::numeric::ublas::vector<std::complex<float> >    eers::math::pol2cart(boost::numeric::ublas::vector<float> r, boost::numeric::ublas::vector<float> p);
-template boost::numeric::ublas::vector<std::complex<float> >    eers::math::fft(boost::numeric::ublas::vector<float> r, kiss_fft_cfg dir);
-template boost::numeric::ublas::vector<std::complex<float> >    eers::math::fft(boost::numeric::ublas::vector<std::complex<float> > z, kiss_fft_cfg dir);
-template boost::numeric::ublas::vector<float>                   eers::math::poly(boost::numeric::ublas::vector<float> roots);
-template boost::numeric::ublas::vector<std::complex<float> >    eers::math::poly(boost::numeric::ublas::vector<std::complex<float> > roots);
-template float                                                  eers::math::polyval(boost::numeric::ublas::vector<float> p, float x);
-template std::complex<float>                                    eers::math::polyval(boost::numeric::ublas::vector<std::complex<float> > p, std::complex<float> x);
-template bool                                                   eers::math::has_nan(boost::numeric::ublas::vector<float> x);
-template bool                                                   eers::math::has_inf(boost::numeric::ublas::vector<float> x);
-template boost::numeric::ublas::vector<float>                   eers::math::linspace(float start, float end, int num);
-template boost::numeric::ublas::vector<float>                   eers::math::logspace(float start, float end, int num);
-template float                                                  eers::math::rescale(float value, float source_min, float source_max, float dest_min, float dest_max);
+template boost::numeric::ublas::vector<float>                   jav::math::add(boost::numeric::ublas::vector<float> x, float a);
+template boost::numeric::ublas::vector<std::complex<float> >    jav::math::add(boost::numeric::ublas::vector<std::complex<float> > x, std::complex<float>  a);
+template boost::numeric::ublas::vector<float>                   jav::math::max(boost::numeric::ublas::vector<float> x, float a);
+template boost::numeric::ublas::vector<float>                   jav::math::max(boost::numeric::ublas::vector<float> x, boost::numeric::ublas::vector<float> y);
+template boost::numeric::ublas::vector<float>                   jav::math::min(boost::numeric::ublas::vector<float> x, float a);
+template boost::numeric::ublas::vector<float>                   jav::math::min(boost::numeric::ublas::vector<float> x, boost::numeric::ublas::vector<float> y);
+template float                                                  jav::math::mean(boost::numeric::ublas::vector<float> x);
+template float                                                  jav::math::sum(boost::numeric::ublas::vector<float> x);
+template boost::numeric::ublas::vector<float>                   jav::math::real(boost::numeric::ublas::vector<std::complex<float> > z);
+template boost::numeric::ublas::vector<float>                   jav::math::imag(boost::numeric::ublas::vector<std::complex<float> > z);
+template boost::numeric::ublas::vector<float>                   jav::math::abs(boost::numeric::ublas::vector<std::complex<float> > z);
+template boost::numeric::ublas::vector<float>                   jav::math::abs(boost::numeric::ublas::vector<float> x);
+template boost::numeric::ublas::vector<float>                   jav::math::angle(boost::numeric::ublas::vector<std::complex<float> > z);
+template boost::numeric::ublas::vector<float>                   jav::math::pow(boost::numeric::ublas::vector<float> x, float p);
+template boost::numeric::ublas::vector<float>                   jav::math::pow(float b, boost::numeric::ublas::vector<float> p);
+template boost::numeric::ublas::vector<float>                   jav::math::log10(boost::numeric::ublas::vector<float> x);
+template boost::numeric::ublas::vector<float>                   jav::math::logb(boost::numeric::ublas::vector<float> x, float b);
+template float                                                  jav::math::dB2lin(float x);
+template boost::numeric::ublas::vector<float>                   jav::math::dB2lin(boost::numeric::ublas::vector<float> x);
+template boost::numeric::ublas::vector<float>                   jav::math::sin(boost::numeric::ublas::vector<float> t);
+template boost::numeric::ublas::vector<float>                   jav::math::cos(boost::numeric::ublas::vector<float> t);
+template boost::numeric::ublas::vector<float>                   jav::math::wrap_to_pi(boost::numeric::ublas::vector<float> t);
+template boost::numeric::ublas::vector<float>                   jav::math::zp(boost::numeric::ublas::vector<float> x, int len);
+template boost::numeric::ublas::vector<std::complex<float> >    jav::math::zp(boost::numeric::ublas::vector<std::complex<float> > z, int len);
+template boost::numeric::ublas::vector<std::complex<float> >    jav::math::complex(boost::numeric::ublas::vector<float> r);
+template boost::numeric::ublas::vector<std::complex<float> >    jav::math::complex(boost::numeric::ublas::vector<float> r, boost::numeric::ublas::vector<float> i);
+template boost::numeric::ublas::vector<std::complex<float> >    jav::math::pol2cart(boost::numeric::ublas::vector<float> r, boost::numeric::ublas::vector<float> p);
+template boost::numeric::ublas::vector<std::complex<float> >    jav::math::fft(boost::numeric::ublas::vector<float> r, kiss_fft_cfg dir);
+template boost::numeric::ublas::vector<std::complex<float> >    jav::math::fft(boost::numeric::ublas::vector<std::complex<float> > z, kiss_fft_cfg dir);
+template boost::numeric::ublas::vector<float>                   jav::math::poly(boost::numeric::ublas::vector<float> roots);
+template boost::numeric::ublas::vector<std::complex<float> >    jav::math::poly(boost::numeric::ublas::vector<std::complex<float> > roots);
+template float                                                  jav::math::polyval(boost::numeric::ublas::vector<float> p, float x);
+template std::complex<float>                                    jav::math::polyval(boost::numeric::ublas::vector<std::complex<float> > p, std::complex<float> x);
+template bool                                                   jav::math::has_nan(boost::numeric::ublas::vector<float> x);
+template bool                                                   jav::math::has_inf(boost::numeric::ublas::vector<float> x);
+template boost::numeric::ublas::vector<float>                   jav::math::linspace(float start, float end, int num);
+template boost::numeric::ublas::vector<float>                   jav::math::logspace(float start, float end, int num);
+template float                                                  jav::math::rescale(float value, float source_min, float source_max, float dest_min, float dest_max);
 
-template boost::numeric::ublas::vector<double>                  eers::math::add(boost::numeric::ublas::vector<double> x, double a);
-template boost::numeric::ublas::vector<std::complex<double> >   eers::math::add(boost::numeric::ublas::vector<std::complex<double> > x, std::complex<double>  a);
-template boost::numeric::ublas::vector<double>                  eers::math::max(boost::numeric::ublas::vector<double> x, double a);
-template boost::numeric::ublas::vector<double>                  eers::math::max(boost::numeric::ublas::vector<double> x, boost::numeric::ublas::vector<double> y);
-template boost::numeric::ublas::vector<double>                  eers::math::min(boost::numeric::ublas::vector<double> x, double a);
-template boost::numeric::ublas::vector<double>                  eers::math::min(boost::numeric::ublas::vector<double> x, boost::numeric::ublas::vector<double> y);
-template double                                                 eers::math::mean(boost::numeric::ublas::vector<double> x);
-template double                                                 eers::math::sum(boost::numeric::ublas::vector<double> x);
-template boost::numeric::ublas::vector<double>                  eers::math::real(boost::numeric::ublas::vector<std::complex<double> > z);
-template boost::numeric::ublas::vector<double>                  eers::math::imag(boost::numeric::ublas::vector<std::complex<double> > z);
-template boost::numeric::ublas::vector<double>                  eers::math::abs(boost::numeric::ublas::vector<std::complex<double> > z);
-template boost::numeric::ublas::vector<double>                  eers::math::abs(boost::numeric::ublas::vector<double> x);
-template boost::numeric::ublas::vector<double>                  eers::math::angle(boost::numeric::ublas::vector<std::complex<double> > z);
-template boost::numeric::ublas::vector<double>                  eers::math::pow(boost::numeric::ublas::vector<double> x, double p);
-template boost::numeric::ublas::vector<double>                  eers::math::pow(double b, boost::numeric::ublas::vector<double> p);
-template boost::numeric::ublas::vector<double>                  eers::math::log10(boost::numeric::ublas::vector<double> x);
-template boost::numeric::ublas::vector<double>                  eers::math::logb(boost::numeric::ublas::vector<double> x, double b);
-template double                                                 eers::math::dB2lin(double x);
-template boost::numeric::ublas::vector<double>                  eers::math::dB2lin(boost::numeric::ublas::vector<double> x);
-template boost::numeric::ublas::vector<double>                  eers::math::sin(boost::numeric::ublas::vector<double> t);
-template boost::numeric::ublas::vector<double>                  eers::math::cos(boost::numeric::ublas::vector<double> t);
-template boost::numeric::ublas::vector<double>                  eers::math::wrap_to_pi(boost::numeric::ublas::vector<double> t);
-template boost::numeric::ublas::vector<double>                  eers::math::zp(boost::numeric::ublas::vector<double> x, int len);
-template boost::numeric::ublas::vector<std::complex<double> >   eers::math::zp(boost::numeric::ublas::vector<std::complex<double> > z, int len);
-template boost::numeric::ublas::vector<std::complex<double> >   eers::math::complex(boost::numeric::ublas::vector<double> r);
-template boost::numeric::ublas::vector<std::complex<double> >   eers::math::complex(boost::numeric::ublas::vector<double> r, boost::numeric::ublas::vector<double> i);
-template boost::numeric::ublas::vector<std::complex<double> >   eers::math::pol2cart(boost::numeric::ublas::vector<double> r, boost::numeric::ublas::vector<double> p);
-template boost::numeric::ublas::vector<std::complex<double> >   eers::math::fft(boost::numeric::ublas::vector<double> r, kiss_fft_cfg dir);
-template boost::numeric::ublas::vector<std::complex<double> >   eers::math::fft(boost::numeric::ublas::vector<std::complex<double> > z, kiss_fft_cfg dir);
-template boost::numeric::ublas::vector<double>                  eers::math::poly(boost::numeric::ublas::vector<double> roots);
-template boost::numeric::ublas::vector<std::complex<double> >   eers::math::poly(boost::numeric::ublas::vector<std::complex<double> > roots);
-template double                                                 eers::math::polyval(boost::numeric::ublas::vector<double> p, double x);
-template std::complex<double>                                   eers::math::polyval(boost::numeric::ublas::vector<std::complex<double> > p, std::complex<double> x);
-template bool                                                   eers::math::has_nan(boost::numeric::ublas::vector<double> x);
-template bool                                                   eers::math::has_inf(boost::numeric::ublas::vector<double> x);
-template boost::numeric::ublas::vector<double>                  eers::math::linspace(double start, double end, int num);
-template boost::numeric::ublas::vector<double>                  eers::math::logspace(double start, double end, int num);
-template double                                                 eers::math::rescale(double value, double source_min, double source_max, double dest_min, double dest_max);
+template boost::numeric::ublas::vector<double>                  jav::math::add(boost::numeric::ublas::vector<double> x, double a);
+template boost::numeric::ublas::vector<std::complex<double> >   jav::math::add(boost::numeric::ublas::vector<std::complex<double> > x, std::complex<double>  a);
+template boost::numeric::ublas::vector<double>                  jav::math::max(boost::numeric::ublas::vector<double> x, double a);
+template boost::numeric::ublas::vector<double>                  jav::math::max(boost::numeric::ublas::vector<double> x, boost::numeric::ublas::vector<double> y);
+template boost::numeric::ublas::vector<double>                  jav::math::min(boost::numeric::ublas::vector<double> x, double a);
+template boost::numeric::ublas::vector<double>                  jav::math::min(boost::numeric::ublas::vector<double> x, boost::numeric::ublas::vector<double> y);
+template double                                                 jav::math::mean(boost::numeric::ublas::vector<double> x);
+template double                                                 jav::math::sum(boost::numeric::ublas::vector<double> x);
+template boost::numeric::ublas::vector<double>                  jav::math::real(boost::numeric::ublas::vector<std::complex<double> > z);
+template boost::numeric::ublas::vector<double>                  jav::math::imag(boost::numeric::ublas::vector<std::complex<double> > z);
+template boost::numeric::ublas::vector<double>                  jav::math::abs(boost::numeric::ublas::vector<std::complex<double> > z);
+template boost::numeric::ublas::vector<double>                  jav::math::abs(boost::numeric::ublas::vector<double> x);
+template boost::numeric::ublas::vector<double>                  jav::math::angle(boost::numeric::ublas::vector<std::complex<double> > z);
+template boost::numeric::ublas::vector<double>                  jav::math::pow(boost::numeric::ublas::vector<double> x, double p);
+template boost::numeric::ublas::vector<double>                  jav::math::pow(double b, boost::numeric::ublas::vector<double> p);
+template boost::numeric::ublas::vector<double>                  jav::math::log10(boost::numeric::ublas::vector<double> x);
+template boost::numeric::ublas::vector<double>                  jav::math::logb(boost::numeric::ublas::vector<double> x, double b);
+template double                                                 jav::math::dB2lin(double x);
+template boost::numeric::ublas::vector<double>                  jav::math::dB2lin(boost::numeric::ublas::vector<double> x);
+template boost::numeric::ublas::vector<double>                  jav::math::sin(boost::numeric::ublas::vector<double> t);
+template boost::numeric::ublas::vector<double>                  jav::math::cos(boost::numeric::ublas::vector<double> t);
+template boost::numeric::ublas::vector<double>                  jav::math::wrap_to_pi(boost::numeric::ublas::vector<double> t);
+template boost::numeric::ublas::vector<double>                  jav::math::zp(boost::numeric::ublas::vector<double> x, int len);
+template boost::numeric::ublas::vector<std::complex<double> >   jav::math::zp(boost::numeric::ublas::vector<std::complex<double> > z, int len);
+template boost::numeric::ublas::vector<std::complex<double> >   jav::math::complex(boost::numeric::ublas::vector<double> r);
+template boost::numeric::ublas::vector<std::complex<double> >   jav::math::complex(boost::numeric::ublas::vector<double> r, boost::numeric::ublas::vector<double> i);
+template boost::numeric::ublas::vector<std::complex<double> >   jav::math::pol2cart(boost::numeric::ublas::vector<double> r, boost::numeric::ublas::vector<double> p);
+template boost::numeric::ublas::vector<std::complex<double> >   jav::math::fft(boost::numeric::ublas::vector<double> r, kiss_fft_cfg dir);
+template boost::numeric::ublas::vector<std::complex<double> >   jav::math::fft(boost::numeric::ublas::vector<std::complex<double> > z, kiss_fft_cfg dir);
+template boost::numeric::ublas::vector<double>                  jav::math::poly(boost::numeric::ublas::vector<double> roots);
+template boost::numeric::ublas::vector<std::complex<double> >   jav::math::poly(boost::numeric::ublas::vector<std::complex<double> > roots);
+template double                                                 jav::math::polyval(boost::numeric::ublas::vector<double> p, double x);
+template std::complex<double>                                   jav::math::polyval(boost::numeric::ublas::vector<std::complex<double> > p, std::complex<double> x);
+template bool                                                   jav::math::has_nan(boost::numeric::ublas::vector<double> x);
+template bool                                                   jav::math::has_inf(boost::numeric::ublas::vector<double> x);
+template boost::numeric::ublas::vector<double>                  jav::math::linspace(double start, double end, int num);
+template boost::numeric::ublas::vector<double>                  jav::math::logspace(double start, double end, int num);
+template double                                                 jav::math::rescale(double value, double source_min, double source_max, double dest_min, double dest_max);
